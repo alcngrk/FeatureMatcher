@@ -6,22 +6,6 @@ import scipy
 from scipy import ndimage, spatial
 
 import transformations
-
-
-def inbounds(shape, indices):
-    assert len(shape) == len(indices)
-    for i, ind in enumerate(indices):
-        if ind < 0 or ind >= shape[i]:
-            return False
-    return True
-
-    for y in xrange(5):
-        for x in xrange(5):
-            gaussian_kernel[x,y] = gaussian_kernel[x,y] * ratio
-
-    return gaussian_kernel
-
-
 ## Keypoint detectors ##########################################################
 
 class KeypointDetector(object):
