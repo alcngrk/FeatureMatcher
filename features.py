@@ -233,7 +233,7 @@ class HarrisKeypointDetector(KeypointDetector):
                     continue
 
                 f = cv2.KeyPoint()
-                f.size = 20
+                f.size = 10
                 f.pt = (x,y)
                 f.angle = orientationImage[y][x]
                 f.response = harrisImage[y][x]
